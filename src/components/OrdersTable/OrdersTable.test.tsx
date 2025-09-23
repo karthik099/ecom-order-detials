@@ -1,6 +1,7 @@
 import { render, screen } from '@testing-library/react';
+import '@testing-library/jest-dom';
 import { describe, it, expect } from 'vitest';
-import { OrdersTable, OrderStatus } from './OrdersTable';
+import { OrdersTable, type OrderStatus } from './OrdersTable';
 
 describe('OrdersTable', () => {
   const orders = [
